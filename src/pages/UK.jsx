@@ -128,58 +128,69 @@ export default function UK() {
         <>
             <Header />
 
-            <main className="pt-28">
-                {/* Hero Section */}
-                <section className="relative overflow-hidden bg-gradient-to-br from-blue-50 via-white to-red-50 py-24">
+            <main className="pt-18">
+                {/* Hero Section with Image */}
+                <section className="relative overflow-hidden bg-gradient-to-br from-blue-50 via-white to-red-50 py-12 md:py-12">
                     <div className="absolute inset-0 bg-grid-slate-100 [mask-image:radial-gradient(ellipse_at_center,white,transparent)]"></div>
                     <div className="max-w-6xl mx-auto px-6 relative">
-                        <div className="flex items-center gap-2 mb-4">
-                            <span className="bg-blue-100 text-blue-700 px-4 py-1.5 rounded-full text-sm font-medium">
-                                Study Destination
-                            </span>
+                        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+                            {/* Left Content */}
+                            <div>
+                                <div className="flex items-center gap-2 mb-4">
+                                    <span className="bg-blue-100 text-blue-700 px-4 py-1.5 rounded-full text-sm font-medium">
+                                        Study Destination
+                                    </span>
+                                </div>
+                                <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
+                                    Study in the <span className="text-blue-600">UK</span>
+                                </h1>
+                                <p className="mt-4 md:mt-6 text-base md:text-lg text-gray-600 leading-relaxed">
+                                    The UK offers a compelling experience for international students, boasting an outstanding higher-education system and numerous top-tier universities.
+                                </p>
+                                <p className="mt-3 md:mt-4 text-gray-700">
+                                    It covers various aspects, including selecting the UK as your study destination, choosing a specific location within the country, gaining insights into its history and culture, and adjusting to life in your new home.
+                                </p>
+                            </div>
+
+                            {/* Right Image */}
+                            <div className="mt-6 lg:mt-0">
+                                <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+                                    <img
+                                        src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=800&h=600&fit=crop&crop=center"
+                                        alt="Big Ben and London Skyline - United Kingdom"
+                                        className="w-full h-64 sm:h-72 md:h-80 lg:h-[400px] object-cover"
+                                    />
+                                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4">
+                                        <p className="text-white text-sm font-medium">📍 London, United Kingdom</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <h1 className="text-5xl md:text-7xl font-bold">
-                            Study in the <span className="text-blue-600">UK</span>
-                        </h1>
-                        <p className="mt-6 text-lg text-gray-600 max-w-3xl leading-relaxed">
-                            The UK offers a compelling experience for international students, boasting an outstanding higher-education system and numerous top-tier universities. Our Study UK tool aims to provide valuable information for those considering studying in the UK.
-                        </p>
-                        <p className="mt-4 text-gray-700 max-w-3xl">
-                            It covers various aspects, including selecting the UK as your study destination, choosing a specific location within the country, gaining insights into its history and culture, and adjusting to life in your new home.
-                        </p>
-                        {/* <div className="mt-8 flex flex-wrap gap-4">
-                            <button className="bg-blue-600 text-white px-8 py-3.5 rounded-full hover:bg-blue-700 transition flex items-center gap-2">
-                                Apply Now <ArrowRight size={18} />
-                            </button>
-                            <button className="border border-blue-600 text-blue-600 px-8 py-3.5 rounded-full hover:bg-blue-50 transition">
-                                Book Consultation
-                            </button>
-                        </div> */}
                     </div>
                 </section>
 
                 {/* Why Study in UK */}
-                <section className="py-24">
+                <section className="py-16 md:py-24">
                     <div className="max-w-6xl mx-auto px-6">
-                        <div className="text-center mb-16">
+                        <div className="text-center mb-12 md:mb-16">
                             <span className="text-blue-600 font-semibold text-sm uppercase tracking-wider">Why UK</span>
-                            <h2 className="text-4xl md:text-5xl font-bold mt-2">Why Study in the United Kingdom?</h2>
+                            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mt-2">Why Study in the United Kingdom?</h2>
                             <div className="w-20 h-1 bg-blue-600 mx-auto mt-4"></div>
                         </div>
 
-                        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
                             {benefits.map((benefit, index) => {
                                 const Icon = benefit.icon;
                                 return (
                                     <div
                                         key={index}
-                                        className="group p-6 border rounded-2xl hover:shadow-xl transition-all duration-300 hover:-translate-y-1 bg-white"
+                                        className="group p-5 md:p-6 border rounded-2xl hover:shadow-xl transition-all duration-300 hover:-translate-y-1 bg-white"
                                     >
-                                        <div className="w-12 h-12 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center mb-4 group-hover:bg-blue-600 group-hover:text-white transition">
-                                            <Icon size={24} />
+                                        <div className="w-10 h-10 md:w-12 md:h-12 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center mb-3 md:mb-4 group-hover:bg-blue-600 group-hover:text-white transition">
+                                            <Icon size={20} className="md:w-6 md:h-6" />
                                         </div>
-                                        <h3 className="text-lg font-bold">{benefit.title}</h3>
-                                        <p className="text-gray-600 text-sm mt-3 leading-relaxed">{benefit.description}</p>
+                                        <h3 className="text-base md:text-lg font-bold">{benefit.title}</h3>
+                                        <p className="text-gray-600 text-xs sm:text-sm mt-2 leading-relaxed">{benefit.description}</p>
                                     </div>
                                 );
                             })}
@@ -188,34 +199,34 @@ export default function UK() {
                 </section>
 
                 {/* Application Procedure */}
-                <section className="py-24 bg-slate-50">
+                <section className="py-16 md:py-24 bg-slate-50">
                     <div className="max-w-6xl mx-auto px-6">
-                        <div className="text-center mb-16">
+                        <div className="text-center mb-12 md:mb-16">
                             <span className="text-blue-600 font-semibold text-sm uppercase tracking-wider">Application Process</span>
-                            <h2 className="text-4xl md:text-5xl font-bold mt-2">Application Procedure</h2>
+                            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mt-2">Application Procedure</h2>
                             <div className="w-20 h-1 bg-blue-600 mx-auto mt-4"></div>
-                            <p className="text-gray-600 mt-6 max-w-2xl mx-auto">
+                            <p className="text-gray-600 mt-4 md:mt-6 max-w-2xl mx-auto text-sm md:text-base">
                                 Enrolling in a UK academic program involves a structured process that encompasses critical steps ensuring a smooth transition for international students.
                             </p>
                         </div>
 
-                        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4">
                             {applicationSteps.map((step, index) => (
                                 <div
                                     key={index}
-                                    className="bg-white p-5 rounded-2xl border hover:shadow-lg transition relative"
+                                    className="bg-white p-4 md:p-5 rounded-2xl border hover:shadow-lg transition relative"
                                 >
-                                    <div className="absolute -top-3 -left-3 w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center text-sm font-bold">
+                                    <div className="absolute -top-3 -left-3 w-7 h-7 md:w-8 md:h-8 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs md:text-sm font-bold">
                                         {step.number}
                                     </div>
-                                    <h3 className="text-base font-bold mt-2">{step.title}</h3>
-                                    <p className="text-gray-600 text-sm mt-2 leading-relaxed">{step.description}</p>
+                                    <h3 className="text-sm md:text-base font-bold mt-2">{step.title}</h3>
+                                    <p className="text-gray-600 text-xs md:text-sm mt-2 leading-relaxed">{step.description}</p>
                                 </div>
                             ))}
                         </div>
 
-                        <div className="mt-8 p-6 bg-blue-50 rounded-2xl border border-blue-100">
-                            <p className="text-gray-700 leading-relaxed">
+                        <div className="mt-6 md:mt-8 p-4 md:p-6 bg-blue-50 rounded-2xl border border-blue-100">
+                            <p className="text-gray-700 text-sm md:text-base leading-relaxed">
                                 <strong>Note:</strong> Navigating these steps diligently ensures a well-prepared and successful journey for international students pursuing education in the United Kingdom.
                             </p>
                         </div>
@@ -223,23 +234,23 @@ export default function UK() {
                 </section>
 
                 {/* Entry Requirements */}
-                <section className="py-24">
+                <section className="py-16 md:py-24">
                     <div className="max-w-6xl mx-auto px-6">
-                        <div className="text-center mb-16">
+                        <div className="text-center mb-12 md:mb-16">
                             <span className="text-blue-600 font-semibold text-sm uppercase tracking-wider">Requirements</span>
-                            <h2 className="text-4xl md:text-5xl font-bold mt-2">Entry Requirements for Students</h2>
+                            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mt-2">Entry Requirements for Students</h2>
                             <div className="w-20 h-1 bg-blue-600 mx-auto mt-4"></div>
                         </div>
 
-                        <div className="grid md:grid-cols-2 gap-8">
-                            <div className="bg-white p-8 rounded-2xl border shadow-sm">
-                                <h3 className="text-xl font-bold mb-6 flex items-center gap-2">
-                                    <GraduationCap className="text-blue-600" size={24} />
+                        <div className="grid md:grid-cols-2 gap-6 md:gap-8">
+                            <div className="bg-white p-6 md:p-8 rounded-2xl border shadow-sm">
+                                <h3 className="text-lg md:text-xl font-bold mb-4 md:mb-6 flex items-center gap-2">
+                                    <GraduationCap className="text-blue-600" size={20} />
                                     Academic & Application Requirements
                                 </h3>
-                                <ul className="space-y-3">
+                                <ul className="space-y-2 md:space-y-3">
                                     {entryRequirements.slice(0, 9).map((req, index) => (
-                                        <li key={index} className="flex items-start gap-3 text-gray-600">
+                                        <li key={index} className="flex items-start gap-3 text-gray-600 text-sm md:text-base">
                                             <CheckCircle className="text-green-500 mt-1 flex-shrink-0" size={16} />
                                             <span>{req}</span>
                                         </li>
@@ -247,14 +258,14 @@ export default function UK() {
                                 </ul>
                             </div>
 
-                            <div className="bg-white p-8 rounded-2xl border shadow-sm">
-                                <h3 className="text-xl font-bold mb-6 flex items-center gap-2">
-                                    <FileCheck className="text-blue-600" size={24} />
+                            <div className="bg-white p-6 md:p-8 rounded-2xl border shadow-sm">
+                                <h3 className="text-lg md:text-xl font-bold mb-4 md:mb-6 flex items-center gap-2">
+                                    <FileCheck className="text-blue-600" size={20} />
                                     Visa & Financial Requirements
                                 </h3>
-                                <ul className="space-y-3">
+                                <ul className="space-y-2 md:space-y-3">
                                     {entryRequirements.slice(9).map((req, index) => (
-                                        <li key={index} className="flex items-start gap-3 text-gray-600">
+                                        <li key={index} className="flex items-start gap-3 text-gray-600 text-sm md:text-base">
                                             <CheckCircle className="text-green-500 mt-1 flex-shrink-0" size={16} />
                                             <span>{req}</span>
                                         </li>
@@ -266,13 +277,13 @@ export default function UK() {
                 </section>
 
                 {/* CTA Section */}
-                <section className="py-20 bg-blue-600 text-white">
+                <section className="py-16 md:py-20 bg-blue-600 text-white">
                     <div className="max-w-4xl mx-auto px-6 text-center">
-                        <h2 className="text-4xl md:text-5xl font-bold">Ready to Study in the UK?</h2>
-                        <p className="mt-4 text-blue-100 text-lg">
+                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">Ready to Study in the UK?</h2>
+                        <p className="mt-3 md:mt-4 text-blue-100 text-base md:text-lg">
                             Let Aaronic International Consultancy Education Service guide you through every step of your UK journey.
                         </p>
-                        <button className="mt-8 bg-white text-blue-600 px-10 py-4 rounded-full font-semibold hover:bg-blue-50 transition shadow-lg">
+                        <button className="mt-6 md:mt-8 bg-white text-blue-600 px-8 md:px-10 py-3 md:py-4 rounded-full font-semibold hover:bg-blue-50 transition shadow-lg text-sm md:text-base">
                             Book a Free Consultation
                         </button>
                     </div>
