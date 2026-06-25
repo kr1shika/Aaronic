@@ -67,15 +67,6 @@ const Home = () => {
                                 top study destinations worldwide.
                             </p>
 
-                            <div className="mt-8 flex gap-4 flex-wrap">
-                                <button className="bg-black-600 text-white px-8 py-4 rounded-full hover:bg-black-700 transition">
-                                    Book Consultation
-                                </button>
-
-                                {/* <button className="border border-slate-300 px-8 py-4 rounded-full hover:bg-white">
-                                    Explore Universities
-                                </button> */}
-                            </div>
                         </div>
 
                         <div>

@@ -1,10 +1,12 @@
+import { Link } from 'react-router-dom';
 import logo from "../assets/nobglogo.png";
+
 const Header = () => {
     return (
         <header className="fixed top-0 left-0 w-full bg-white/95 backdrop-blur-md shadow-sm z-50">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 sm:h-20 flex justify-between items-center">
                 {/* Logo */}
-                <div className="flex items-center flex-shrink-0">
+                <Link to="/" className="flex items-center flex-shrink-0">
                     <img
                         src={logo}
                         alt="Aaronic Logo"
@@ -13,38 +15,41 @@ const Header = () => {
                     <span className="ml-2 text-base sm:text-lg font-bold text-black hidden sm:inline">
                         Aaronic
                     </span>
-                </div>
+                </Link>
+
                 <nav className="hidden md:flex gap-3 lg:gap-5 items-center">
-                    <a
-                        href="#about"
+                    <Link
+                        to="/study-abroad"
                         className="text-gray-700 text-xs sm:text-sm font-medium hover:text-blue-600 transition-colors duration-200"
                     >
-                        Study Aborad Guide                    </a>
-                    <a
-                        href="#services"
+                        Study Abroad Guide
+                    </Link>
+                    <Link
+                        to="/services"
                         className="text-gray-700 text-xs sm:text-sm font-medium hover:text-blue-600 transition-colors duration-200"
                     >
                         Services
-                    </a>
-                    <a
-                        href="#countries"
+                    </Link>
+                    <Link
+                        to="/destinations"
                         className="text-gray-700 text-xs sm:text-sm font-medium hover:text-blue-600 transition-colors duration-200"
                     >
                         Destinations
-                    </a>
-                    <a
-                        href="#contact"
+                    </Link>
+                    <Link
+                        to="/contact"
                         className="text-gray-700 text-xs sm:text-sm font-medium hover:text-blue-600 transition-colors duration-200"
                     >
                         Contacts
-                    </a>
-                    <a
-                        href="#contact"
+                    </Link>
+                    <Link
+                        to="/scholarship"
                         className="text-gray-700 text-xs sm:text-sm font-medium hover:text-blue-600 transition-colors duration-200"
                     >
                         Scholarship
-                    </a>
+                    </Link>
                 </nav>
+
                 <div className="flex items-center gap-2 sm:gap-3">
                     <a
                         href="tel:+1234567890"
@@ -67,38 +72,46 @@ const Header = () => {
                         <span className="hidden xs:inline">WhatsApp</span>
                     </a>
                 </div>
+
                 <button className="md:hidden flex flex-col gap-1 p-1 hover:bg-gray-100 rounded transition">
                     <span className="w-4 h-0.5 bg-gray-800"></span>
                     <span className="w-4 h-0.5 bg-gray-800"></span>
                     <span className="w-4 h-0.5 bg-gray-800"></span>
                 </button>
             </div>
+
             <div className="md:hidden bg-white/95 backdrop-blur-md border-t border-gray-100">
                 <div className="px-4 py-1.5 flex flex-col gap-1.5">
-                    <a
-                        href="#about"
+                    <Link
+                        to="/"
                         className="text-gray-700 text-xs font-medium hover:text-blue-600 hover:bg-gray-50 px-3 py-1 rounded-lg transition"
                     >
-                        About
-                    </a>
-                    <a
-                        href="#services"
+                        Home
+                    </Link>
+                    <Link
+                        to="/study-abroad"
+                        className="text-gray-700 text-xs font-medium hover:text-blue-600 hover:bg-gray-50 px-3 py-1 rounded-lg transition"
+                    >
+                        Study Abroad
+                    </Link>
+                    <Link
+                        to="/services"
                         className="text-gray-700 text-xs font-medium hover:text-blue-600 hover:bg-gray-50 px-3 py-1 rounded-lg transition"
                     >
                         Services
-                    </a>
-                    <a
-                        href="#countries"
+                    </Link>
+                    <Link
+                        to="/test-preparation"
                         className="text-gray-700 text-xs font-medium hover:text-blue-600 hover:bg-gray-50 px-3 py-1 rounded-lg transition"
                     >
-                        Destinations
-                    </a>
-                    <a
-                        href="#contact"
+                        Test Preparation
+                    </Link>
+                    <Link
+                        to="/contact"
                         className="text-gray-700 text-xs font-medium hover:text-blue-600 hover:bg-gray-50 px-3 py-1 rounded-lg transition"
                     >
                         Contact
-                    </a>
+                    </Link>
                     <div className="flex gap-2 mt-1.5 pt-1.5 border-t border-gray-100">
                         <a
                             href="tel:+1234567890"
