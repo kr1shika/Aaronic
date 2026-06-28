@@ -109,24 +109,24 @@ export default function Canada() {
 
             <main className="pt-18">
                 {/* Hero Section with Image */}
-                <section className="relative overflow-hidden bg-gradient-to-br from-red-50 via-white to-red-50 py-12 md:py-12">
+                <section className="relative overflow-hidden bg-gradient-to-br from-green-50 via-white to-green-50 py-12 md:py-12">
                     <div className="absolute inset-0 bg-grid-slate-100 [mask-image:radial-gradient(ellipse_at_center,white,transparent)]"></div>
                     <div className="max-w-6xl mx-auto px-6 relative">
                         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
                             {/* Left Content */}
                             <div>
                                 <div className="flex items-center gap-2 mb-4">
-                                    <span className="bg-red-100 text-red-700 px-4 py-1.5 rounded-full text-sm font-medium">
+                                    <span className="bg-green-100 text-[#405d32] px-4 py-1.5 rounded-full text-sm font-medium">
                                         Study Destination
                                     </span>
                                 </div>
                                 <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
-                                    Study in <span className="text-red-600">Canada</span>
+                                    Study in <span className="text-[#405d32]">Canada</span>
                                 </h1>
                                 <p className="mt-4 md:mt-6 text-base md:text-lg text-gray-600 leading-relaxed">
                                     Canada offers top-ranked universities and colleges that attract international students. In fact, multiple Canadian universities are included in the QS World University Rankings 2024.
                                 </p>
-                                <p className="mt-3 md:mt-4 text-red-700 font-medium">
+                                <p className="mt-3 md:mt-4 text-[#405d32] font-medium">
                                     Canada provides excellent post-graduation work opportunities, allowing you to gain valuable international experience.
                                 </p>
                             </div>
@@ -152,9 +152,9 @@ export default function Canada() {
                 <section className="py-16 md:py-24">
                     <div className="max-w-6xl mx-auto px-6">
                         <div className="text-center mb-12 md:mb-16">
-                            <span className="text-red-600 font-semibold text-sm uppercase tracking-wider">Why Canada</span>
+                            <span className="text-[#405d32] font-semibold text-sm uppercase tracking-wider">Why Canada</span>
                             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mt-2">Why Study in Canada?</h2>
-                            <div className="w-20 h-1 bg-red-600 mx-auto mt-4"></div>
+                            <div className="w-20 h-1 bg-[#405d32] mx-auto mt-4"></div>
                         </div>
 
                         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
@@ -165,7 +165,7 @@ export default function Canada() {
                                         key={index}
                                         className="group p-5 md:p-6 border rounded-2xl hover:shadow-xl transition-all duration-300 hover:-translate-y-1 bg-white"
                                     >
-                                        <div className="w-10 h-10 md:w-12 md:h-12 rounded-xl bg-red-100 text-red-600 flex items-center justify-center mb-3 md:mb-4 group-hover:bg-red-600 group-hover:text-white transition">
+                                        <div className="w-10 h-10 md:w-12 md:h-12 rounded-xl bg-green-100 text-[#405d32] flex items-center justify-center mb-3 md:mb-4 group-hover:bg-[#405d32] group-hover:text-white transition">
                                             <Icon size={20} className="md:w-6 md:h-6" />
                                         </div>
                                         <h3 className="text-base md:text-lg font-bold">{benefit.title}</h3>
@@ -181,9 +181,9 @@ export default function Canada() {
                 <section className="py-16 md:py-24 bg-slate-50">
                     <div className="max-w-6xl mx-auto px-6">
                         <div className="text-center mb-12 md:mb-16">
-                            <span className="text-red-600 font-semibold text-sm uppercase tracking-wider">Application Process</span>
+                            <span className="text-[#405d32] font-semibold text-sm uppercase tracking-wider">Application Process</span>
                             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mt-2">Application Procedure</h2>
-                            <div className="w-20 h-1 bg-red-600 mx-auto mt-4"></div>
+                            <div className="w-20 h-1 bg-[#405d32] mx-auto mt-4"></div>
                         </div>
 
                         <div className="space-y-4 md:space-y-6">
@@ -195,16 +195,16 @@ export default function Canada() {
                                         className="flex flex-col sm:flex-row gap-4 md:gap-6 items-start bg-white p-4 md:p-6 rounded-2xl shadow-sm hover:shadow-md transition border border-slate-100"
                                     >
                                         <div className="flex-shrink-0 flex items-center gap-3">
-                                            <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-red-600 text-white flex items-center justify-center text-base md:text-xl font-bold">
+                                            <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-[#405d32] text-white flex items-center justify-center text-base md:text-xl font-bold">
                                                 {step.number}
                                             </div>
-                                            <div className="w-8 h-8 md:w-10 md:h-10 rounded-xl bg-red-100 text-red-600 flex items-center justify-center md:hidden">
+                                            <div className="w-8 h-8 md:w-10 md:h-10 rounded-xl bg-green-100 text-[#405d32] flex items-center justify-center md:hidden">
                                                 <Icon size={16} className="md:w-5 md:h-5" />
                                             </div>
                                         </div>
                                         <div>
                                             <div className="flex items-center gap-3">
-                                                <div className="w-8 h-8 md:w-10 md:h-10 rounded-xl bg-red-100 text-red-600 items-center justify-center hidden md:flex">
+                                                <div className="w-8 h-8 md:w-10 md:h-10 rounded-xl bg-green-100 text-[#405d32] items-center justify-center hidden md:flex">
                                                     <Icon size={18} className="md:w-5 md:h-5" />
                                                 </div>
                                                 <h3 className="text-base md:text-xl font-bold">{step.title}</h3>
@@ -222,21 +222,21 @@ export default function Canada() {
                 <section className="py-16 md:py-24">
                     <div className="max-w-6xl mx-auto px-6">
                         <div className="text-center mb-12 md:mb-16">
-                            <span className="text-red-600 font-semibold text-sm uppercase tracking-wider">Documents Required</span>
+                            <span className="text-[#405d32] font-semibold text-sm uppercase tracking-wider">Documents Required</span>
                             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mt-2">Documents for Application</h2>
-                            <div className="w-20 h-1 bg-red-600 mx-auto mt-4"></div>
+                            <div className="w-20 h-1 bg-[#405d32] mx-auto mt-4"></div>
                         </div>
 
                         <div className="grid md:grid-cols-2 gap-6 md:gap-8">
                             <div className="bg-white p-6 md:p-8 rounded-2xl border shadow-sm">
                                 <h3 className="text-lg md:text-xl font-bold mb-4 flex items-center gap-2">
-                                    <FileCheck className="text-red-600" size={20} />
+                                    <FileCheck className="text-[#405d32]" size={20} />
                                     For Letter of Acceptance
                                 </h3>
                                 <ul className="space-y-2">
                                     {requiredDocuments.map((doc, index) => (
                                         <li key={index} className="flex items-start gap-3 text-gray-600 text-sm md:text-base">
-                                            <CheckCircle className="text-green-500 mt-1 flex-shrink-0" size={16} />
+                                            <CheckCircle className="text-[#405d32] mt-1 flex-shrink-0" size={16} />
                                             <span>{doc}</span>
                                         </li>
                                     ))}
@@ -245,13 +245,13 @@ export default function Canada() {
 
                             <div className="bg-white p-6 md:p-8 rounded-2xl border shadow-sm">
                                 <h3 className="text-lg md:text-xl font-bold mb-4 flex items-center gap-2">
-                                    <Globe className="text-red-600" size={20} />
+                                    <Globe className="text-[#405d32]" size={20} />
                                     For Student Visa (IRCC)
                                 </h3>
                                 <ul className="space-y-2">
                                     {visaDocuments.map((doc, index) => (
                                         <li key={index} className="flex items-start gap-3 text-gray-600 text-sm md:text-base">
-                                            <CheckCircle className="text-green-500 mt-1 flex-shrink-0" size={16} />
+                                            <CheckCircle className="text-[#405d32] mt-1 flex-shrink-0" size={16} />
                                             <span>{doc}</span>
                                         </li>
                                     ))}
@@ -265,42 +265,42 @@ export default function Canada() {
                 <section className="py-16 md:py-24 bg-slate-50">
                     <div className="max-w-6xl mx-auto px-6">
                         <div className="text-center mb-12 md:mb-16">
-                            <span className="text-red-600 font-semibold text-sm uppercase tracking-wider">Requirements</span>
+                            <span className="text-[#405d32] font-semibold text-sm uppercase tracking-wider">Requirements</span>
                             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mt-2">Entry Requirements for Students</h2>
-                            <div className="w-20 h-1 bg-red-600 mx-auto mt-4"></div>
+                            <div className="w-20 h-1 bg-[#405d32] mx-auto mt-4"></div>
                         </div>
 
                         <div className="grid md:grid-cols-2 gap-6 md:gap-8">
                             {/* Academic Requirements */}
                             <div className="bg-white p-6 md:p-8 rounded-2xl border shadow-sm">
                                 <h3 className="text-lg md:text-xl font-bold mb-4 md:mb-6 flex items-center gap-2">
-                                    <GraduationCap className="text-red-600" size={20} />
+                                    <GraduationCap className="text-[#405d32]" size={20} />
                                     Academic Requirements
                                 </h3>
 
                                 <div className="mb-4 md:mb-6 p-4 bg-slate-50 rounded-xl">
-                                    <h4 className="font-bold text-red-600 text-sm md:text-base">Bachelor's Degree Program</h4>
+                                    <h4 className="font-bold text-[#405d32] text-sm md:text-base">Bachelor's Degree Program</h4>
                                     <ul className="mt-2 space-y-2 text-gray-600 text-sm md:text-base">
                                         <li className="flex items-start gap-2">
-                                            <CheckCircle className="text-green-500 mt-1 flex-shrink-0" size={16} />
+                                            <CheckCircle className="text-[#405d32] mt-1 flex-shrink-0" size={16} />
                                             <span>Graduation (or graduating soon) from a recognized senior secondary school program</span>
                                         </li>
                                         <li className="flex items-start gap-2">
-                                            <CheckCircle className="text-green-500 mt-1 flex-shrink-0" size={16} />
+                                            <CheckCircle className="text-[#405d32] mt-1 flex-shrink-0" size={16} />
                                             <span>Minimum GPA of 2.8 or equivalent</span>
                                         </li>
                                     </ul>
                                 </div>
 
                                 <div className="p-4 bg-slate-50 rounded-xl">
-                                    <h4 className="font-bold text-red-600 text-sm md:text-base">Master's Degree Program</h4>
+                                    <h4 className="font-bold text-[#405d32] text-sm md:text-base">Master's Degree Program</h4>
                                     <ul className="mt-2 space-y-2 text-gray-600 text-sm md:text-base">
                                         <li className="flex items-start gap-2">
-                                            <CheckCircle className="text-green-500 mt-1 flex-shrink-0" size={16} />
+                                            <CheckCircle className="text-[#405d32] mt-1 flex-shrink-0" size={16} />
                                             <span>Completion of a 4-year bachelor's degree or equivalent</span>
                                         </li>
                                         <li className="flex items-start gap-2">
-                                            <CheckCircle className="text-green-500 mt-1 flex-shrink-0" size={16} />
+                                            <CheckCircle className="text-[#405d32] mt-1 flex-shrink-0" size={16} />
                                             <span>Equivalent of a minimum "B" average over the last two years of your degree</span>
                                         </li>
                                     </ul>
@@ -310,36 +310,36 @@ export default function Canada() {
                             {/* Language Requirements */}
                             <div className="bg-white p-6 md:p-8 rounded-2xl border shadow-sm">
                                 <h3 className="text-lg md:text-xl font-bold mb-4 md:mb-6 flex items-center gap-2">
-                                    <MessageSquare className="text-red-600" size={20} />
+                                    <MessageSquare className="text-[#405d32]" size={20} />
                                     Language Requirements
                                 </h3>
 
                                 <div className="mb-4 md:mb-6 p-4 bg-slate-50 rounded-xl">
-                                    <h4 className="font-bold text-red-600 text-sm md:text-base">IELTS Requirements</h4>
+                                    <h4 className="font-bold text-[#405d32] text-sm md:text-base">IELTS Requirements</h4>
                                     <p className="text-xs md:text-sm text-gray-500 mt-1">Overall band score of 6.0 and above</p>
                                     <div className="mt-3 space-y-2">
                                         <div className="flex justify-between items-center p-2 bg-white rounded-lg border text-sm md:text-base">
                                             <span className="text-gray-700">Certificate/Diploma/Bachelor's</span>
-                                            <span className="font-bold text-red-600">6.5 Overall</span>
+                                            <span className="font-bold text-[#405d32]">6.5 Overall</span>
                                         </div>
                                         <div className="flex justify-between items-center p-2 bg-white rounded-lg border text-sm md:text-base">
                                             <span className="text-gray-700">Postgraduate/Masters</span>
-                                            <span className="font-bold text-red-600">7.0 Overall</span>
+                                            <span className="font-bold text-[#405d32]">7.0 Overall</span>
                                         </div>
                                     </div>
                                     <p className="text-xs text-gray-500 mt-2">No band less than 6.0 for Bachelor's, 6.5 for Masters</p>
                                 </div>
 
                                 <div className="p-4 bg-slate-50 rounded-xl">
-                                    <h4 className="font-bold text-red-600 text-sm md:text-base">PTE Requirements</h4>
+                                    <h4 className="font-bold text-[#405d32] text-sm md:text-base">PTE Requirements</h4>
                                     <div className="mt-3 space-y-2">
                                         <div className="flex justify-between items-center p-2 bg-white rounded-lg border text-sm md:text-base">
                                             <span className="text-gray-700">Certificate/Diploma/Bachelor's</span>
-                                            <span className="font-bold text-red-600">64 Overall</span>
+                                            <span className="font-bold text-[#405d32]">64 Overall</span>
                                         </div>
                                         <div className="flex justify-between items-center p-2 bg-white rounded-lg border text-sm md:text-base">
                                             <span className="text-gray-700">Postgraduate/Masters</span>
-                                            <span className="font-bold text-red-600">67 Overall</span>
+                                            <span className="font-bold text-[#405d32]">67 Overall</span>
                                         </div>
                                     </div>
                                     <p className="text-xs text-gray-500 mt-2">No band less than 60 for Bachelor's, 63 for Masters</p>
@@ -351,12 +351,12 @@ export default function Canada() {
                         <div className="mt-6 md:mt-8 grid md:grid-cols-2 gap-4 md:gap-6">
                             <div className="bg-white p-4 md:p-6 rounded-2xl border shadow-sm">
                                 <h4 className="font-bold text-base md:text-lg mb-1">Visa Application Fee</h4>
-                                <p className="text-2xl md:text-3xl font-bold text-red-600">CAD $150</p>
+                                <p className="text-2xl md:text-3xl font-bold text-[#405d32]">CAD $150</p>
                                 <p className="text-xs md:text-sm text-gray-500 mt-1">Covers the cost of processing your student visa application</p>
                             </div>
                             <div className="bg-white p-4 md:p-6 rounded-2xl border shadow-sm">
                                 <h4 className="font-bold text-base md:text-lg mb-1">Biometrics Fee</h4>
-                                <p className="text-2xl md:text-3xl font-bold text-red-600">CAD $85</p>
+                                <p className="text-2xl md:text-3xl font-bold text-[#405d32]">CAD $85</p>
                                 <p className="text-xs md:text-sm text-gray-500 mt-1">For fingerprints and photo required as part of your student visa application</p>
                             </div>
                         </div>
@@ -364,13 +364,13 @@ export default function Canada() {
                 </section>
 
                 {/* CTA Section */}
-                <section className="py-16 md:py-20 bg-red-600 text-white">
+                <section className="py-16 md:py-20 bg-[#405d32] text-white">
                     <div className="max-w-4xl mx-auto px-6 text-center">
                         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">Start Your Canadian Journey Today</h2>
                         <p className="mt-3 md:mt-4 text-red-100 text-base md:text-lg">
                             Get expert guidance for your Canadian education from Aaronic International Consultancy Education Service.
                         </p>
-                        <button className="mt-6 md:mt-8 bg-white text-red-600 px-8 md:px-10 py-3 md:py-4 rounded-full font-semibold hover:bg-red-50 transition shadow-lg text-sm md:text-base">
+                        <button className="mt-6 md:mt-8 bg-white text-[#405d32] px-8 md:px-10 py-3 md:py-4 rounded-full font-semibold hover:bg-red-50 transition shadow-lg text-sm md:text-base">
                             Book a Free Consultation
                         </button>
                     </div>

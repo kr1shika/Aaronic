@@ -137,12 +137,12 @@ export default function UK() {
                             {/* Left Content */}
                             <div>
                                 <div className="flex items-center gap-2 mb-4">
-                                    <span className="bg-blue-100 text-blue-700 px-4 py-1.5 rounded-full text-sm font-medium">
+                                    <span className="bg-blue-100 text-[#5c8aa1] px-4 py-1.5 rounded-full text-sm font-medium">
                                         Study Destination
                                     </span>
                                 </div>
                                 <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
-                                    Study in the <span className="text-blue-600">UK</span>
+                                    Study in the <span className="text-[#5c8aa1]">UK</span>
                                 </h1>
                                 <p className="mt-4 md:mt-6 text-base md:text-lg text-gray-600 leading-relaxed">
                                     The UK offers a compelling experience for international students, boasting an outstanding higher-education system and numerous top-tier universities.
@@ -173,9 +173,9 @@ export default function UK() {
                 <section className="py-16 md:py-24">
                     <div className="max-w-6xl mx-auto px-6">
                         <div className="text-center mb-12 md:mb-16">
-                            <span className="text-blue-600 font-semibold text-sm uppercase tracking-wider">Why UK</span>
+                            <span className="text-[#5c8aa1] font-semibold text-sm uppercase tracking-wider">Why UK</span>
                             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mt-2">Why Study in the United Kingdom?</h2>
-                            <div className="w-20 h-1 bg-blue-600 mx-auto mt-4"></div>
+                            <div className="w-20 h-1 bg-[#5c8aa1] mx-auto mt-4"></div>
                         </div>
 
                         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
@@ -186,7 +186,7 @@ export default function UK() {
                                         key={index}
                                         className="group p-5 md:p-6 border rounded-2xl hover:shadow-xl transition-all duration-300 hover:-translate-y-1 bg-white"
                                     >
-                                        <div className="w-10 h-10 md:w-12 md:h-12 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center mb-3 md:mb-4 group-hover:bg-blue-600 group-hover:text-white transition">
+                                        <div className="w-10 h-10 md:w-12 md:h-12 rounded-xl bg-blue-100 text-[#5c8aa1] flex items-center justify-center mb-3 md:mb-4 group-hover:bg-[#5c8aa1] group-hover:text-white transition">
                                             <Icon size={20} className="md:w-6 md:h-6" />
                                         </div>
                                         <h3 className="text-base md:text-lg font-bold">{benefit.title}</h3>
@@ -202,9 +202,9 @@ export default function UK() {
                 <section className="py-16 md:py-24 bg-slate-50">
                     <div className="max-w-6xl mx-auto px-6">
                         <div className="text-center mb-12 md:mb-16">
-                            <span className="text-blue-600 font-semibold text-sm uppercase tracking-wider">Application Process</span>
+                            <span className="text-[#5c8aa1] font-semibold text-sm uppercase tracking-wider">Application Process</span>
                             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mt-2">Application Procedure</h2>
-                            <div className="w-20 h-1 bg-blue-600 mx-auto mt-4"></div>
+                            <div className="w-20 h-1 bg-[#5c8aa1] mx-auto mt-4"></div>
                             <p className="text-gray-600 mt-4 md:mt-6 max-w-2xl mx-auto text-sm md:text-base">
                                 Enrolling in a UK academic program involves a structured process that encompasses critical steps ensuring a smooth transition for international students.
                             </p>
@@ -216,7 +216,7 @@ export default function UK() {
                                     key={index}
                                     className="bg-white p-4 md:p-5 rounded-2xl border hover:shadow-lg transition relative"
                                 >
-                                    <div className="absolute -top-3 -left-3 w-7 h-7 md:w-8 md:h-8 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs md:text-sm font-bold">
+                                    <div className="absolute -top-3 -left-3 w-7 h-7 md:w-8 md:h-8 rounded-full bg-[#5c8aa1] text-white flex items-center justify-center text-xs md:text-sm font-bold">
                                         {step.number}
                                     </div>
                                     <h3 className="text-sm md:text-base font-bold mt-2">{step.title}</h3>
@@ -237,15 +237,15 @@ export default function UK() {
                 <section className="py-16 md:py-24">
                     <div className="max-w-6xl mx-auto px-6">
                         <div className="text-center mb-12 md:mb-16">
-                            <span className="text-blue-600 font-semibold text-sm uppercase tracking-wider">Requirements</span>
+                            <span className="text-[#5c8aa1] font-semibold text-sm uppercase tracking-wider">Requirements</span>
                             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mt-2">Entry Requirements for Students</h2>
-                            <div className="w-20 h-1 bg-blue-600 mx-auto mt-4"></div>
+                            <div className="w-20 h-1 bg-[#5c8aa1] mx-auto mt-4"></div>
                         </div>
 
                         <div className="grid md:grid-cols-2 gap-6 md:gap-8">
                             <div className="bg-white p-6 md:p-8 rounded-2xl border shadow-sm">
                                 <h3 className="text-lg md:text-xl font-bold mb-4 md:mb-6 flex items-center gap-2">
-                                    <GraduationCap className="text-blue-600" size={20} />
+                                    <GraduationCap className="text-[#5c8aa1]" size={20} />
                                     Academic & Application Requirements
                                 </h3>
                                 <ul className="space-y-2 md:space-y-3">
@@ -260,7 +260,7 @@ export default function UK() {
 
                             <div className="bg-white p-6 md:p-8 rounded-2xl border shadow-sm">
                                 <h3 className="text-lg md:text-xl font-bold mb-4 md:mb-6 flex items-center gap-2">
-                                    <FileCheck className="text-blue-600" size={20} />
+                                    <FileCheck className="text-[#5c8aa1]" size={20} />
                                     Visa & Financial Requirements
                                 </h3>
                                 <ul className="space-y-2 md:space-y-3">
@@ -277,13 +277,13 @@ export default function UK() {
                 </section>
 
                 {/* CTA Section */}
-                <section className="py-16 md:py-20 bg-blue-600 text-white">
+                <section className="py-16 md:py-20 bg-[#5c8aa1] text-white">
                     <div className="max-w-4xl mx-auto px-6 text-center">
                         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">Ready to Study in the UK?</h2>
                         <p className="mt-3 md:mt-4 text-blue-100 text-base md:text-lg">
                             Let Aaronic International Consultancy Education Service guide you through every step of your UK journey.
                         </p>
-                        <button className="mt-6 md:mt-8 bg-white text-blue-600 px-8 md:px-10 py-3 md:py-4 rounded-full font-semibold hover:bg-blue-50 transition shadow-lg text-sm md:text-base">
+                        <button className="mt-6 md:mt-8 bg-white text-[#5c8aa1] px-8 md:px-10 py-3 md:py-4 rounded-full font-semibold hover:bg-blue-50 transition shadow-lg text-sm md:text-base">
                             Book a Free Consultation
                         </button>
                     </div>
