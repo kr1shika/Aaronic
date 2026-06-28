@@ -5,9 +5,9 @@ import {
     Languages,
     MessageSquare
 } from "lucide-react";
+import { Link } from 'react-router-dom';
 import Footer from "../components/Footer";
 import Header from "../components/Header";
-
 const Home = () => {
     const services = [
         {
@@ -169,73 +169,84 @@ const Home = () => {
                 </section>
 
                 {/* Countries */}
+                {/* Countries */}
                 <section
                     id="countries"
                     className="py-24 bg-white"
                 >
                     <style>{`
-                        .flag-circle {
-                            transition: transform 0.7s ease;
-                        }
-                        .country-card:hover .flag-circle {
-                            transform: rotate(360deg);
-                        }
-                    `}</style>
+        .flag-circle {
+            transition: transform 0.7s ease;
+        }
+        .country-card:hover .flag-circle {
+            transform: rotate(360deg);
+        }
+    `}</style>
                     <div className="max-w-7xl mx-auto px-6">
                         <h2 className="text-4xl font-bold text-center">
                             Popular Destinations
                         </h2>
 
-                        <div className="flex flex-wrap justify-center gap-10 mt-14">                            {[
-                            {
-                                name: "USA",
-                                flag: "https://flagcdn.com/w160/us.png",
-                            },
-                            {
-                                name: "Australia",
-                                flag: "https://flagcdn.com/w160/au.png",
-                            },
-                            {
-                                name: "Canada",
-                                flag: "https://flagcdn.com/w160/ca.png",
-                            },
-                            {
-                                name: "New Zealand",
-                                flag: "https://flagcdn.com/w160/nz.png",
-                            },
-                            {
-                                name: "UK",
-                                flag: "https://flagcdn.com/w160/gb.png",
-                            },
-                            {
-                                name: "China",
-                                flag: "https://flagcdn.com/w160/cn.png",
-                            },
-                            {
-                                name: "Finland",
-                                flag: "https://flagcdn.com/w160/fi.png",
-                            },
-                            {
-                                name: "Germany",
-                                flag: "https://flagcdn.com/w160/de.png",
-                            },
-                        ].map((country) => (
-                            <div
-                                key={country.name}
-                                className="country-card flex flex-col items-center gap-4 cursor-pointer group"
-                            >
-                                <div className="flag-circle w-24 h-24 rounded-full overflow-hidden shadow-md border-2 border-slate-100">
-                                    <img
-                                        src={country.flag}
-                                        alt={`${country.name} flag`}
-                                        className="w-full h-full object-cover"
-                                    />
-                                </div>
-                                <span className="font-semibold text-slate-700 text-sm text-center">
-                                    {country.name}
-                                </span>
-                            </div>
-                        ))}
+                        <div className="flex flex-wrap justify-center gap-10 mt-14">
+                            {[
+                                {
+                                    name: "USA",
+                                    flag: "https://flagcdn.com/w160/us.png",
+                                    route: "/study-abroad/usa"
+                                },
+                                {
+                                    name: "Australia",
+                                    flag: "https://flagcdn.com/w160/au.png",
+                                    route: "/study-abroad/australia"
+                                },
+                                {
+                                    name: "Canada",
+                                    flag: "https://flagcdn.com/w160/ca.png",
+                                    route: "/study-abroad/canada"
+                                },
+                                {
+                                    name: "New Zealand",
+                                    flag: "https://flagcdn.com/w160/nz.png",
+                                    route: "/study-abroad/new-zealand"
+                                },
+                                {
+                                    name: "UK",
+                                    flag: "https://flagcdn.com/w160/gb.png",
+                                    route: "/study-abroad/uk"
+                                },
+                                {
+                                    name: "China",
+                                    flag: "https://flagcdn.com/w160/cn.png",
+                                    route: "/study-abroad/china"
+                                },
+                                // {
+                                //     name: "Finland",
+                                //     flag: "https://flagcdn.com/w160/fi.png",
+                                //     route: "/study-abroad/finland"
+                                // },
+                                // {
+                                //     name: "Germany",
+                                //     flag: "https://flagcdn.com/w160/de.png",
+                                //     route: "/study-abroad/germany"
+                                // },
+                            ].map((country) => (
+                                <Link
+                                    key={country.name}
+                                    to={country.route}
+                                    className="country-card flex flex-col items-center gap-4 group"
+                                >
+                                    <div className="flag-circle w-24 h-24 rounded-full overflow-hidden shadow-md border-2 border-slate-100 group-hover:border-blue-500 transition-colors duration-300">
+                                        <img
+                                            src={country.flag}
+                                            alt={`${country.name} flag`}
+                                            className="w-full h-full object-cover"
+                                        />
+                                    </div>
+                                    <span className="font-semibold text-slate-700 text-sm text-center group-hover:text-blue-600 transition-colors duration-300">
+                                        {country.name}
+                                    </span>
+                                </Link>
+                            ))}
                         </div>
                     </div>
                 </section>

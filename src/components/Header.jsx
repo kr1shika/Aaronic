@@ -30,17 +30,17 @@ const Header = () => {
                     >
                         Services
                     </Link>
-                    <Link
+                    {/* <Link
                         to="/destinations"
                         className="text-gray-700 text-xs sm:text-sm font-medium hover:text-blue-600 transition-colors duration-200"
                     >
                         Destinations
-                    </Link>
+                    </Link> */}
                     <Link
                         to="/contact"
                         className="text-gray-700 text-xs sm:text-sm font-medium hover:text-blue-600 transition-colors duration-200"
                     >
-                        Contacts
+                        Contact/Location
                     </Link>
                     <Link
                         to="/scholarship"
