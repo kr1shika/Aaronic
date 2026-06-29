@@ -1,27 +1,18 @@
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import { 
-  GraduationCap, 
-  Award, 
-  BookOpen, 
-  Shield, 
+import {
   Briefcase,
-  Globe,
-  FileCheck,
-  UserCheck,
-  School,
+  Building,
   Clock,
   DollarSign,
+  Globe,
+  GraduationCap,
   MessageSquare,
-  CheckCircle,
+  Shield,
+  Trees,
   Users,
-  Building,
-  MapPin,
-  Heart,
-  Plane,
-  Family,
-  Trees
+  Users2
 } from "lucide-react";
+import Footer from "../components/Footer";
+import Header from "../components/Header";
 
 export default function NewZealand() {
   const benefits = [
@@ -56,7 +47,7 @@ export default function NewZealand() {
       description: "A unique advantage of studying in New Zealand is that students can arrange tuition fee payments after receiving their student visa decision, reducing financial burden and providing greater flexibility in payment arrangements."
     },
     {
-      icon: Family,
+      icon: Users2,
       title: "Dependents & Family Benefits",
       description: "Master's degree students are eligible to bring their spouses and dependent children to New Zealand on dependent visas, allowing families to stay together while pursuing higher education."
     }
@@ -103,17 +94,17 @@ export default function NewZealand() {
               {/* Left Content */}
               <div>
                 <div className="flex items-center gap-2 mb-4">
-                  <span className="bg-green-100 text-green-700 px-4 py-1.5 rounded-full text-sm font-medium">
+                  <span className="bg-orange-100 text-[#f38143] px-4 py-1.5 rounded-full text-sm font-medium">
                     Study Destination
                   </span>
                 </div>
                 <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
-                  Study in <span className="text-green-600">New Zealand</span>
+                  Study in <span className="text-[#f38143]">New Zealand</span>
                 </h1>
                 <p className="mt-4 md:mt-6 text-base md:text-lg text-gray-600 leading-relaxed">
                   Embark on your academic journey in New Zealand! Study in this island nation and unlock a world of possibilities — from world-renowned universities and innovative educational programs to stunning natural landscapes and a welcoming multicultural society.
                 </p>
-                <p className="mt-3 md:mt-4 text-green-700 font-medium">
+                <p className="mt-3 md:mt-4 text-[#f38143] font-medium">
                   New Zealand welcomes you to a future of limitless opportunities — make your mark, expand your horizons, and thrive in a country known for innovation, safety, and outstanding quality of life.
                 </p>
               </div>
@@ -121,7 +112,7 @@ export default function NewZealand() {
               {/* Right Image */}
               <div className="mt-6 lg:mt-0">
                 <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-                  <img 
+                  <img
                     src="https://images.unsplash.com/photo-1507699622108-4be3abd695ad?w=800&h=600&fit=crop&crop=center"
                     alt="Mount Cook and Lake Pukaki - New Zealand"
                     className="w-full h-64 sm:h-72 md:h-80 lg:h-[400px] object-cover"
@@ -134,25 +125,24 @@ export default function NewZealand() {
             </div>
           </div>
         </section>
-
         {/* Why Study in New Zealand */}
         <section className="py-16 md:py-24">
           <div className="max-w-6xl mx-auto px-6">
             <div className="text-center mb-12 md:mb-16">
-              <span className="text-green-600 font-semibold text-sm uppercase tracking-wider">Why New Zealand</span>
+              <span className="text-[#f38143] font-semibold text-sm uppercase tracking-wider">Why New Zealand</span>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mt-2">Why Study in New Zealand?</h2>
-              <div className="w-20 h-1 bg-green-600 mx-auto mt-4"></div>
+              <div className="w-20 h-1 bg-[#f38143] mx-auto mt-4"></div>
             </div>
 
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
               {benefits.map((benefit, index) => {
                 const Icon = benefit.icon;
                 return (
-                  <div 
+                  <div
                     key={index}
                     className="group p-5 md:p-6 border rounded-2xl hover:shadow-xl transition-all duration-300 hover:-translate-y-1 bg-white"
                   >
-                    <div className="w-10 h-10 md:w-12 md:h-12 rounded-xl bg-green-100 text-green-600 flex items-center justify-center mb-3 md:mb-4 group-hover:bg-green-600 group-hover:text-white transition">
+                    <div className="w-10 h-10 md:w-12 md:h-12 rounded-xl bg-orange-100 text-[#f38143] flex items-center justify-center mb-3 md:mb-4 group-hover:bg-[#f38143] group-hover:text-white transition">
                       <Icon size={20} className="md:w-6 md:h-6" />
                     </div>
                     <h3 className="text-base md:text-lg font-bold">{benefit.title}</h3>
@@ -168,9 +158,9 @@ export default function NewZealand() {
         <section className="py-16 md:py-24 bg-slate-50">
           <div className="max-w-6xl mx-auto px-6">
             <div className="text-center mb-12 md:mb-16">
-              <span className="text-green-600 font-semibold text-sm uppercase tracking-wider">Application Process</span>
+              <span className="text-[#f38143] font-semibold text-sm uppercase tracking-wider">Application Process</span>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mt-2">Application Procedure</h2>
-              <div className="w-20 h-1 bg-green-600 mx-auto mt-4"></div>
+              <div className="w-20 h-1 bg-[#f38143] mx-auto mt-4"></div>
               <p className="text-gray-600 mt-4 md:mt-6 max-w-2xl mx-auto text-sm md:text-base">
                 We invite you to embark on a seamless journey towards your educational aspirations with Aaronic International Consultancy Education Service. We recommend initiating the application process <strong>6-8 months</strong> prior to the intended intake date.
               </p>
@@ -178,12 +168,12 @@ export default function NewZealand() {
 
             <div className="space-y-4 md:space-y-6">
               {applicationSteps.map((step, index) => (
-                <div 
+                <div
                   key={index}
                   className="flex flex-col sm:flex-row gap-4 md:gap-6 items-start bg-white p-4 md:p-6 rounded-2xl shadow-sm hover:shadow-md transition border border-slate-100"
                 >
                   <div className="flex-shrink-0">
-                    <div className="w-12 h-12 md:w-16 md:h-16 rounded-full bg-green-600 text-white flex items-center justify-center text-lg md:text-2xl font-bold">
+                    <div className="w-12 h-12 md:w-16 md:h-16 rounded-full bg-[#f38143] text-white flex items-center justify-center text-lg md:text-2xl font-bold">
                       {step.number}
                     </div>
                   </div>
@@ -201,9 +191,9 @@ export default function NewZealand() {
         <section className="py-16 md:py-24">
           <div className="max-w-6xl mx-auto px-6">
             <div className="text-center mb-12 md:mb-16">
-              <span className="text-green-600 font-semibold text-sm uppercase tracking-wider">Requirements</span>
+              <span className="text-[#f38143] font-semibold text-sm uppercase tracking-wider">Requirements</span>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mt-2">Entry Requirements and Costs</h2>
-              <div className="w-20 h-1 bg-green-600 mx-auto mt-4"></div>
+              <div className="w-20 h-1 bg-[#f38143] mx-auto mt-4"></div>
               <p className="text-gray-600 mt-4 md:mt-6 max-w-3xl mx-auto text-sm md:text-base">
                 To gain admission to a New Zealand university, international students must meet specific academic and English language proficiency requirements.
               </p>
@@ -213,7 +203,7 @@ export default function NewZealand() {
             <div className="grid md:grid-cols-2 gap-6 md:gap-8 mb-8 md:mb-12">
               <div className="bg-white p-6 md:p-8 rounded-2xl border shadow-sm">
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="w-8 h-8 md:w-10 md:h-10 rounded-lg bg-green-100 text-green-600 flex items-center justify-center">
+                  <div className="w-8 h-8 md:w-10 md:h-10 rounded-lg bg-orange-100 text-[#f38143] flex items-center justify-center">
                     <MessageSquare size={18} className="md:w-5 md:h-5" />
                   </div>
                   <h3 className="text-lg md:text-xl font-bold">IELTS Requirements</h3>
@@ -234,7 +224,7 @@ export default function NewZealand() {
                         <td className="p-3 font-medium">6.0</td>
                         <td className="p-3 text-center">6.0</td>
                         <td className="p-3 text-center">6.0</td>
-                        <td className="p-3 text-center font-bold text-green-600">6.5</td>
+                        <td className="p-3 text-center font-bold text-[#f38143]">6.5</td>
                       </tr>
                     </tbody>
                   </table>
@@ -276,14 +266,14 @@ export default function NewZealand() {
             <div className="grid md:grid-cols-2 gap-6 md:gap-8">
               <div className="bg-white p-6 md:p-8 rounded-2xl border shadow-sm">
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="w-8 h-8 md:w-10 md:h-10 rounded-lg bg-green-100 text-green-600 flex items-center justify-center">
+                  <div className="w-8 h-8 md:w-10 md:h-10 rounded-lg bg-orange-100 text-[#f38143] flex items-center justify-center">
                     <DollarSign size={18} className="md:w-5 md:h-5" />
                   </div>
                   <h3 className="text-lg md:text-xl font-bold">Tuition Fees</h3>
                 </div>
                 <div className="space-y-4">
                   <div className="p-4 bg-slate-50 rounded-xl">
-                    <h4 className="font-semibold text-green-600">Bachelor's Programs</h4>
+                    <h4 className="font-semibold text-[#f38143]">Bachelor's Programs</h4>
                     <p className="text-xl font-bold">NZD $18,000 - $28,000</p>
                     <p className="text-xs text-gray-500">(USD $10,500 - $16,500) annually</p>
                   </div>
@@ -320,14 +310,14 @@ export default function NewZealand() {
         <section className="py-16 md:py-24 bg-slate-50">
           <div className="max-w-6xl mx-auto px-6">
             <div className="text-center mb-12 md:mb-16">
-              <span className="text-green-600 font-semibold text-sm uppercase tracking-wider">Post-Study Benefits</span>
+              <span className="text-[#f38143] font-semibold text-sm uppercase tracking-wider">Post-Study Benefits</span>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mt-2">Post-Study Work Opportunities & Benefits</h2>
-              <div className="w-20 h-1 bg-green-600 mx-auto mt-4"></div>
+              <div className="w-20 h-1 bg-[#f38143] mx-auto mt-4"></div>
             </div>
 
             <div className="grid sm:grid-cols-2 gap-4 md:gap-6">
               <div className="bg-white p-6 md:p-8 rounded-2xl border shadow-sm hover:shadow-lg transition">
-                <div className="w-12 h-12 rounded-xl bg-green-100 text-green-600 flex items-center justify-center mb-4">
+                <div className="w-12 h-12 rounded-xl bg-orange-100 text-[#f38143] flex items-center justify-center mb-4">
                   <Briefcase size={24} />
                 </div>
                 <h3 className="text-lg md:text-xl font-bold">Post-Study Work Visa</h3>
@@ -358,7 +348,7 @@ export default function NewZealand() {
 
               <div className="bg-white p-6 md:p-8 rounded-2xl border shadow-sm hover:shadow-lg transition">
                 <div className="w-12 h-12 rounded-xl bg-yellow-100 text-yellow-600 flex items-center justify-center mb-4">
-                  <Family size={24} />
+                  <Users2 size={24} />
                 </div>
                 <h3 className="text-lg md:text-xl font-bold">Dependents on Post-Study Visa</h3>
                 <p className="text-gray-600 text-sm mt-2 leading-relaxed">
@@ -370,13 +360,13 @@ export default function NewZealand() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-16 md:py-20 bg-green-600 text-white">
+        <section className="py-16 md:py-20 bg-[#f38143] text-white">
           <div className="max-w-4xl mx-auto px-6 text-center">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">Ready to Explore New Zealand?</h2>
-            <p className="mt-3 md:mt-4 text-green-100 text-base md:text-lg">
+            <p className="mt-3 md:mt-4 text-orange-100 text-base md:text-lg">
               Contact Aaronic International Consultancy Education Service for comprehensive support in pursuing your dreams of studying in New Zealand.
             </p>
-            <button className="mt-6 md:mt-8 bg-white text-green-600 px-8 md:px-10 py-3 md:py-4 rounded-full font-semibold hover:bg-green-50 transition shadow-lg text-sm md:text-base">
+            <button className="mt-6 md:mt-8 bg-white text-[#f38143] px-8 md:px-10 py-3 md:py-4 rounded-full font-semibold hover:bg-orange-50 transition shadow-lg text-sm md:text-base">
               Book a Free Consultation
             </button>
           </div>

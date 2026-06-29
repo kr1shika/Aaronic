@@ -28,6 +28,12 @@ const countries = [
     description: "World-leading research institutions with extensive scholarship and career opportunities."
   },
   {
+    name: "New Zealand",
+    route: "/study-abroad/new-zealand",
+    flag: "https://flagcdn.com/w160/nz.png",
+    description: "Affordable education with post-study work visas and stunning natural environments."
+  },
+  {
     name: "China",
     route: "/study-abroad/china",
     flag: "https://flagcdn.com/w160/cn.png",
