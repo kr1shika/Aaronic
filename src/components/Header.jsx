@@ -1,7 +1,11 @@
+import { Menu, X } from 'lucide-react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import logo from "../assets/nobglogo.png";
 
 const Header = () => {
+    const [isOpen, setIsOpen] = useState(false);
+
     // Configuration
     const phoneNumber = "9842520169";
     const whatsappMessage = "Hello! I'm interested in studying abroad and would like to know more about your services.";
@@ -21,6 +25,7 @@ const Header = () => {
                     </span>
                 </Link>
 
+                {/* Desktop Navigation */}
                 <nav className="hidden md:flex gap-3 lg:gap-5 items-center">
                     <Link
                         to="/study-abroad"
@@ -42,7 +47,8 @@ const Header = () => {
                     </Link>
                 </nav>
 
-                <div className="flex items-center gap-2 sm:gap-3">
+                {/* Desktop Action Buttons */}
+                <div className="hidden md:flex items-center gap-2 sm:gap-3">
                     <a
                         href={`tel:${phoneNumber}`}
                         className="flex items-center gap-1.5 bg-green-500 hover:bg-green-600 text-white px-3 sm:px-3.5 py-1 rounded-full transition-all duration-200 text-xs font-medium whitespace-nowrap shadow-sm hover:shadow-md"
@@ -67,54 +73,69 @@ const Header = () => {
                     </a>
                 </div>
 
-                <button className="md:hidden flex flex-col gap-1 p-1 hover:bg-gray-100 rounded transition">
-                    <span className="w-4 h-0.5 bg-gray-800"></span>
-                    <span className="w-4 h-0.5 bg-gray-800"></span>
-                    <span className="w-4 h-0.5 bg-gray-800"></span>
+                {/* Hamburger Menu Button - Mobile */}
+                <button
+                    onClick={() => setIsOpen(!isOpen)}
+                    className="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors duration-200"
+                    aria-label="Toggle menu"
+                >
+                    {isOpen ? <X size={24} /> : <Menu size={24} />}
                 </button>
             </div>
 
-            <div className="md:hidden bg-white/95 backdrop-blur-md border-t border-gray-100">
-                <div className="px-4 py-1.5 flex flex-col gap-1.5">
-                    <Link
-                        to="/"
-                        className="text-gray-700 text-xs font-medium hover:text-blue-600 hover:bg-gray-50 px-3 py-1 rounded-lg transition"
-                    >
-                        Home
-                    </Link>
-                    <Link
-                        to="/study-abroad"
-                        className="text-gray-700 text-xs font-medium hover:text-blue-600 hover:bg-gray-50 px-3 py-1 rounded-lg transition"
-                    >
-                        Study Abroad
-                    </Link>
-                    <Link
-                        to="/services"
-                        className="text-gray-700 text-xs font-medium hover:text-blue-600 hover:bg-gray-50 px-3 py-1 rounded-lg transition"
-                    >
-                        Services
-                    </Link>
-                    <Link
-                        to="/contact"
-                        className="text-gray-700 text-xs font-medium hover:text-blue-600 hover:bg-gray-50 px-3 py-1 rounded-lg transition"
-                    >
-                        Contact
-                    </Link>
-                    <div className="flex gap-2 mt-1.5 pt-1.5 border-t border-gray-100">
-                        <a
-                            href={`tel:${phoneNumber}`}
-                            className="flex-1 bg-green-500 hover:bg-green-600 text-white text-center px-3 py-1.5 rounded-lg text-xs font-medium transition"
+            {/* Mobile Navigation - Slides down when open */}
+            <div
+                className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? 'max-h-[400px] opacity-100' : 'max-h-0 opacity-0'
+                    }`}
+            >
+                <div className="bg-white/95 backdrop-blur-md border-t border-gray-100 px-4 py-4">
+                    <div className="flex flex-col gap-2">
+                        <Link
+                            to="/"
+                            onClick={() => setIsOpen(false)}
+                            className="text-gray-700 text-sm font-medium hover:text-blue-600 hover:bg-gray-50 px-3 py-2 rounded-lg transition"
                         >
-                            {phoneNumber}
-                        </a>
-                        <a
-                            href={`https://wa.me/${phoneNumber}?text=${encodeURIComponent(whatsappMessage)}`}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="flex-1 bg-[#25D366] hover:bg-[#1da851] text-white text-center px-3 py-1.5 rounded-lg text-xs font-medium transition"
+                            Home
+                        </Link>
+                        <Link
+                            to="/study-abroad"
+                            onClick={() => setIsOpen(false)}
+                            className="text-gray-700 text-sm font-medium hover:text-blue-600 hover:bg-gray-50 px-3 py-2 rounded-lg transition"
                         >
-                            WhatsApp
-                        </a>
+                            Study Abroad
+                        </Link>
+                        <Link
+                            to="/services"
+                            onClick={() => setIsOpen(false)}
+                            className="text-gray-700 text-sm font-medium hover:text-blue-600 hover:bg-gray-50 px-3 py-2 rounded-lg transition"
+                        >
+                            Services
+                        </Link>
+                        <Link
+                            to="/contact"
+                            onClick={() => setIsOpen(false)}
+                            className="text-gray-700 text-sm font-medium hover:text-blue-600 hover:bg-gray-50 px-3 py-2 rounded-lg transition"
+                        >
+                            Contact/Location
+                        </Link>
+
+                        {/* Mobile Action Buttons */}
+                        <div className="flex gap-2 mt-2 pt-3 border-t border-gray-100">
+                            <a
+                                href={`tel:${phoneNumber}`}
+                                className="flex-1 bg-green-500 hover:bg-green-600 text-white text-center px-3 py-2.5 rounded-lg text-sm font-medium transition"
+                            >
+                                Call Now
+                            </a>
+                            <a
+                                href={`https://wa.me/${phoneNumber}?text=${encodeURIComponent(whatsappMessage)}`}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex-1 bg-[#25D366] hover:bg-[#1da851] text-white text-center px-3 py-2.5 rounded-lg text-sm font-medium transition"
+                            >
+                                WhatsApp
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
